@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="img/leaf.png">
+    <title>
+        Tshul's Webpage
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/default1.css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1 style="text-align: center">Trevor Shumway</h1>
+    <img id="tshums" src="img/IMG_2211.jpeg" style="width: 400px; padding-left:40px;" />
+    <br /><br />
+    <p style="padding-left: 30px;">I hope to be ready to work in industry as a full stack web developer after finishing IS 413.</p>
+    <p style="padding-left: 30px;">My top 3 jobs I want to pursue after graduating are:</p>
+    <br />
+    <ol class="list-group list-group-numbered" style="padding-left: 30px;">
+        <li class="list-group-item">Full stack web developer</li>
+        <li class="list-group-item">Chief Information Oficer</li>
+        <li class="list-group-item">Data Scientist</li>
+    </ol>
+    <br />
+
+    <h2 style="padding-left: 30px;">IS 413 Grade Calculator</h2>
+    <fieldset style="padding-left: 30px;">
+        <form>
+            <label>Assignments:</label>
+            <input type="number" id="assignments"  /><br /><br />
+            <label>Group Project:</label>
+            <input type="number" id="groupproject" /><br /><br />
+            <label>Quizzes:</label>
+            <input type="number" id="quizzes" /><br /><br />
+            <label>Exams:</label>
+            <input type="number" id="exams" /><br /><br />
+            <label>Intex:</label>
+            <input type="number" id="intex" /><br /><br />
+            <input id="submitgrade" type="button" value="Submit" />
+        </form>
+    </fieldset>
+    <p id="numbergrade"></p>
+    <p id="lettergrade"></p>
+    <!--<script src="lib/bootstrap/js/bootstrap.min.js"></script>-->
+    
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/grade.js"></script>
+</body>
+</html>

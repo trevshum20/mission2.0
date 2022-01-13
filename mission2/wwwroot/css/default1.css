@@ -1,0 +1,10 @@
+﻿body {
+    font-family:papyrus;
+    
+}
+
+label {
+    font-size: 20px;
+    width: 150px;
+    display: inline-block;
+}
