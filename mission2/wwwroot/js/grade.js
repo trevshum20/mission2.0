@@ -1,21 +1,17 @@
-﻿//$("#submitgrade").click(function () {
-//    alert("Hi");
-//})
-
-//document.getElementById("submitgrade").addEventListener("click", function () {
-//    alert("hi");
-//})
-
-$("#submitgrade").click(function () {
-    var assignments = $("#assignments").val();
+﻿$("#submitgrade").click(function () {
+    // collect inputs
+    var assignments = $("#assignments").val(); 
     var groupproject = $("#groupproject").val();
     var quizzes = $("#quizzes").val();
     var exams = $("#exams").val();
     var intex = $("#intex").val();
+
+    //perform logic: calculate their final numeric grade, assign a letter
+    // grade based on their numeric grade
+
     var numGrade = ((assignments * .55) + (groupproject * .05) + (quizzes * .1) + (exams * .2) + (intex * .1));
 
-    //var numGrade = 94;
-    var letGrade = "";
+    
 
     if (numGrade >= 94) {
         letGrade = "Your letter grade will be an A"
@@ -53,7 +49,7 @@ $("#submitgrade").click(function () {
         letGrade = "Your letter grade will be an E"
     }
 
-    //$("#numbergrade").val() = "Number Grade: ";
+    // output results: their numeric grade and letter grade
 
     alert("Your numeric grade will be " + numGrade + "%\n" + letGrade);
 })
